@@ -1,4 +1,4 @@
-# network_handling
+# Network and Error Handling in FLutter
 
 Network and error handling in flutter using Dio , flutter_bloc and freezed package
 
