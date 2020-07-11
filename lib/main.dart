@@ -66,7 +66,8 @@ class _MyHomePageState extends State<MyHomePage> {
               return dataWidget(data);
             },
             error: (NetworkExceptions error) {
-              return Text(NetworkExceptions.getErrorMessage(error));
+              return Center(
+                  child: Text(NetworkExceptions.getErrorMessage(error)));
             },
           );
         },

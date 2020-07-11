@@ -18,6 +18,7 @@ class MovieBloc extends Bloc<MovieEvent, ResultState<List<Movie>>> {
     yield ResultState.loading();
     if (event is LoadMovies) {
       ApiResult<List<Movie>> apiResult = await apiRepository.fetchMovieList();
+      await Future.delayed(Duration(seconds: 2));
       yield* apiResult.when(success: (List<Movie> data) async* {
         yield ResultState.data(data: data);
       }, failure: (NetworkExceptions error) async* {
