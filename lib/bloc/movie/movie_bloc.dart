@@ -9,10 +9,9 @@ import 'package:network_handling/services/network_exceptions.dart';
 class MovieBloc extends Bloc<MovieEvent, ResultState<List<Movie>>> {
   final APIRepository apiRepository;
 
-  MovieBloc({this.apiRepository}) : assert(apiRepository != null);
-
-  @override
-  ResultState<List<Movie>> get initialState => Idle();
+  MovieBloc({this.apiRepository})
+      : assert(apiRepository != null),
+        super(Idle());
 
   @override
   Stream<ResultState<List<Movie>>> mapEventToState(MovieEvent event) async* {
