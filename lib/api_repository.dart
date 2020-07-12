@@ -20,7 +20,7 @@ class APIRepository {
       final response = await dioClient
           .get("movie/popular", queryParameters: {"api_key": _apiKey});
       List<Movie> movieList = MovieResponse.fromJson(response).results;
-      return ApiResult.failure(error: NetworkExceptions.noInternetConnection());
+      return ApiResult.success(data: movieList);
     } catch (e) {
       return ApiResult.failure(error: NetworkExceptions.getDioException(e));
     }
