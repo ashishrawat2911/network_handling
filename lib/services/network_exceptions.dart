@@ -9,7 +9,7 @@ part 'network_exceptions.freezed.dart';
 abstract class NetworkExceptions with _$NetworkExceptions {
   const factory NetworkExceptions.requestCancelled() = RequestCancelled;
 
-  const factory NetworkExceptions.unauthorisedRequest() = UnauthorisedRequest;
+  const factory NetworkExceptions.unauthorizedRequest() = UnauthorizedRequest;
 
   const factory NetworkExceptions.badRequest() = BadRequest;
 
@@ -41,6 +41,36 @@ abstract class NetworkExceptions with _$NetworkExceptions {
 
   const factory NetworkExceptions.unexpectedError() = UnexpectedError;
 
+  static NetworkExceptions handleResponse(int statusCode) {
+    switch (statusCode) {
+      case 400:
+      case 401:
+      case 403:
+        return NetworkExceptions.unauthorizedRequest();
+        break;
+      case 404:
+        return NetworkExceptions.notFound("Not found");
+        break;
+      case 409:
+        return NetworkExceptions.conflict();
+        break;
+      case 408:
+        return NetworkExceptions.requestTimeout();
+        break;
+      case 500:
+        return NetworkExceptions.internalServerError();
+        break;
+      case 503:
+        return NetworkExceptions.serviceUnavailable();
+        break;
+      default:
+        var responseCode = statusCode;
+        return NetworkExceptions.defaultError(
+          "Received invalid status code: $responseCode",
+        );
+    }
+  }
+
   static NetworkExceptions getDioException(error) {
     if (error is Exception) {
       try {
@@ -60,37 +90,8 @@ abstract class NetworkExceptions with _$NetworkExceptions {
               networkExceptions = NetworkExceptions.sendTimeout();
               break;
             case DioErrorType.RESPONSE:
-              switch (error.response.statusCode) {
-                case 400:
-                  networkExceptions = NetworkExceptions.unauthorisedRequest();
-                  break;
-                case 401:
-                  networkExceptions = NetworkExceptions.unauthorisedRequest();
-                  break;
-                case 403:
-                  networkExceptions = NetworkExceptions.unauthorisedRequest();
-                  break;
-                case 404:
-                  networkExceptions = NetworkExceptions.notFound("Not found");
-                  break;
-                case 409:
-                  networkExceptions = NetworkExceptions.conflict();
-                  break;
-                case 408:
-                  networkExceptions = NetworkExceptions.requestTimeout();
-                  break;
-                case 500:
-                  networkExceptions = NetworkExceptions.internalServerError();
-                  break;
-                case 503:
-                  networkExceptions = NetworkExceptions.serviceUnavailable();
-                  break;
-                default:
-                  var responseCode = error.response.statusCode;
-                  networkExceptions = NetworkExceptions.defaultError(
-                    "Received invalid status code: $responseCode",
-                  );
-              }
+              networkExceptions =
+                  NetworkExceptions.handleResponse(error.response.statusCode);
               break;
             case DioErrorType.SEND_TIMEOUT:
               networkExceptions = NetworkExceptions.sendTimeout();
@@ -133,8 +134,8 @@ abstract class NetworkExceptions with _$NetworkExceptions {
       errorMessage = "Method Allowed";
     }, badRequest: () {
       errorMessage = "Bad request";
-    }, unauthorisedRequest: () {
-      errorMessage = "Unauthorised request";
+    }, unauthorizedRequest: () {
+      errorMessage = "Unauthorized request";
     }, unexpectedError: () {
       errorMessage = "Unexpected error occurred";
     }, requestTimeout: () {

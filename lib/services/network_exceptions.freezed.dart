@@ -16,8 +16,8 @@ class _$NetworkExceptionsTearOff {
     return const RequestCancelled();
   }
 
-  UnauthorisedRequest unauthorisedRequest() {
-    return const UnauthorisedRequest();
+  UnauthorizedRequest unauthorizedRequest() {
+    return const UnauthorizedRequest();
   }
 
   BadRequest badRequest() {
@@ -92,7 +92,7 @@ mixin _$NetworkExceptions {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -112,7 +112,7 @@ mixin _$NetworkExceptions {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -133,7 +133,7 @@ mixin _$NetworkExceptions {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -153,7 +153,7 @@ mixin _$NetworkExceptions {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -225,7 +225,7 @@ class _$RequestCancelled implements RequestCancelled {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -243,7 +243,7 @@ class _$RequestCancelled implements RequestCancelled {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -266,7 +266,7 @@ class _$RequestCancelled implements RequestCancelled {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -295,7 +295,7 @@ class _$RequestCancelled implements RequestCancelled {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -313,7 +313,7 @@ class _$RequestCancelled implements RequestCancelled {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -336,7 +336,7 @@ class _$RequestCancelled implements RequestCancelled {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -366,34 +366,34 @@ abstract class RequestCancelled implements NetworkExceptions {
   const factory RequestCancelled() = _$RequestCancelled;
 }
 
-abstract class $UnauthorisedRequestCopyWith<$Res> {
-  factory $UnauthorisedRequestCopyWith(
-          UnauthorisedRequest value, $Res Function(UnauthorisedRequest) then) =
-      _$UnauthorisedRequestCopyWithImpl<$Res>;
+abstract class $UnauthorizedRequestCopyWith<$Res> {
+  factory $UnauthorizedRequestCopyWith(
+          UnauthorizedRequest value, $Res Function(UnauthorizedRequest) then) =
+      _$UnauthorizedRequestCopyWithImpl<$Res>;
 }
 
-class _$UnauthorisedRequestCopyWithImpl<$Res>
+class _$UnauthorizedRequestCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
-    implements $UnauthorisedRequestCopyWith<$Res> {
-  _$UnauthorisedRequestCopyWithImpl(
-      UnauthorisedRequest _value, $Res Function(UnauthorisedRequest) _then)
-      : super(_value, (v) => _then(v as UnauthorisedRequest));
+    implements $UnauthorizedRequestCopyWith<$Res> {
+  _$UnauthorizedRequestCopyWithImpl(
+      UnauthorizedRequest _value, $Res Function(UnauthorizedRequest) _then)
+      : super(_value, (v) => _then(v as UnauthorizedRequest));
 
   @override
-  UnauthorisedRequest get _value => super._value as UnauthorisedRequest;
+  UnauthorizedRequest get _value => super._value as UnauthorizedRequest;
 }
 
-class _$UnauthorisedRequest implements UnauthorisedRequest {
-  const _$UnauthorisedRequest();
+class _$UnauthorizedRequest implements UnauthorizedRequest {
+  const _$UnauthorizedRequest();
 
   @override
   String toString() {
-    return 'NetworkExceptions.unauthorisedRequest()';
+    return 'NetworkExceptions.unauthorizedRequest()';
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is UnauthorisedRequest);
+    return identical(this, other) || (other is UnauthorizedRequest);
   }
 
   @override
@@ -403,7 +403,7 @@ class _$UnauthorisedRequest implements UnauthorisedRequest {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -421,7 +421,7 @@ class _$UnauthorisedRequest implements UnauthorisedRequest {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -437,14 +437,14 @@ class _$UnauthorisedRequest implements UnauthorisedRequest {
     assert(unableToProcess != null);
     assert(defaultError != null);
     assert(unexpectedError != null);
-    return unauthorisedRequest();
+    return unauthorizedRequest();
   }
 
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -463,8 +463,8 @@ class _$UnauthorisedRequest implements UnauthorisedRequest {
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (unauthorisedRequest != null) {
-      return unauthorisedRequest();
+    if (unauthorizedRequest != null) {
+      return unauthorizedRequest();
     }
     return orElse();
   }
@@ -473,7 +473,7 @@ class _$UnauthorisedRequest implements UnauthorisedRequest {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -491,7 +491,7 @@ class _$UnauthorisedRequest implements UnauthorisedRequest {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -507,14 +507,14 @@ class _$UnauthorisedRequest implements UnauthorisedRequest {
     assert(unableToProcess != null);
     assert(defaultError != null);
     assert(unexpectedError != null);
-    return unauthorisedRequest(this);
+    return unauthorizedRequest(this);
   }
 
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -533,15 +533,15 @@ class _$UnauthorisedRequest implements UnauthorisedRequest {
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (unauthorisedRequest != null) {
-      return unauthorisedRequest(this);
+    if (unauthorizedRequest != null) {
+      return unauthorizedRequest(this);
     }
     return orElse();
   }
 }
 
-abstract class UnauthorisedRequest implements NetworkExceptions {
-  const factory UnauthorisedRequest() = _$UnauthorisedRequest;
+abstract class UnauthorizedRequest implements NetworkExceptions {
+  const factory UnauthorizedRequest() = _$UnauthorizedRequest;
 }
 
 abstract class $BadRequestCopyWith<$Res> {
@@ -580,7 +580,7 @@ class _$BadRequest implements BadRequest {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -598,7 +598,7 @@ class _$BadRequest implements BadRequest {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -621,7 +621,7 @@ class _$BadRequest implements BadRequest {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -650,7 +650,7 @@ class _$BadRequest implements BadRequest {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -668,7 +668,7 @@ class _$BadRequest implements BadRequest {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -691,7 +691,7 @@ class _$BadRequest implements BadRequest {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -776,7 +776,7 @@ class _$NotFound implements NotFound {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -794,7 +794,7 @@ class _$NotFound implements NotFound {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -817,7 +817,7 @@ class _$NotFound implements NotFound {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -846,7 +846,7 @@ class _$NotFound implements NotFound {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -864,7 +864,7 @@ class _$NotFound implements NotFound {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -887,7 +887,7 @@ class _$NotFound implements NotFound {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -957,7 +957,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -975,7 +975,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -998,7 +998,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -1027,7 +1027,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -1045,7 +1045,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1068,7 +1068,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -1135,7 +1135,7 @@ class _$NotAcceptable implements NotAcceptable {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -1153,7 +1153,7 @@ class _$NotAcceptable implements NotAcceptable {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1176,7 +1176,7 @@ class _$NotAcceptable implements NotAcceptable {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -1205,7 +1205,7 @@ class _$NotAcceptable implements NotAcceptable {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -1223,7 +1223,7 @@ class _$NotAcceptable implements NotAcceptable {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1246,7 +1246,7 @@ class _$NotAcceptable implements NotAcceptable {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -1313,7 +1313,7 @@ class _$RequestTimeout implements RequestTimeout {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -1331,7 +1331,7 @@ class _$RequestTimeout implements RequestTimeout {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1354,7 +1354,7 @@ class _$RequestTimeout implements RequestTimeout {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -1383,7 +1383,7 @@ class _$RequestTimeout implements RequestTimeout {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -1401,7 +1401,7 @@ class _$RequestTimeout implements RequestTimeout {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1424,7 +1424,7 @@ class _$RequestTimeout implements RequestTimeout {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -1491,7 +1491,7 @@ class _$SendTimeout implements SendTimeout {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -1509,7 +1509,7 @@ class _$SendTimeout implements SendTimeout {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1532,7 +1532,7 @@ class _$SendTimeout implements SendTimeout {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -1561,7 +1561,7 @@ class _$SendTimeout implements SendTimeout {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -1579,7 +1579,7 @@ class _$SendTimeout implements SendTimeout {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1602,7 +1602,7 @@ class _$SendTimeout implements SendTimeout {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -1666,7 +1666,7 @@ class _$Conflict implements Conflict {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -1684,7 +1684,7 @@ class _$Conflict implements Conflict {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1707,7 +1707,7 @@ class _$Conflict implements Conflict {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -1736,7 +1736,7 @@ class _$Conflict implements Conflict {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -1754,7 +1754,7 @@ class _$Conflict implements Conflict {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1777,7 +1777,7 @@ class _$Conflict implements Conflict {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -1844,7 +1844,7 @@ class _$InternalServerError implements InternalServerError {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -1862,7 +1862,7 @@ class _$InternalServerError implements InternalServerError {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1885,7 +1885,7 @@ class _$InternalServerError implements InternalServerError {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -1914,7 +1914,7 @@ class _$InternalServerError implements InternalServerError {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -1932,7 +1932,7 @@ class _$InternalServerError implements InternalServerError {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -1955,7 +1955,7 @@ class _$InternalServerError implements InternalServerError {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -2022,7 +2022,7 @@ class _$NotImplemented implements NotImplemented {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -2040,7 +2040,7 @@ class _$NotImplemented implements NotImplemented {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2063,7 +2063,7 @@ class _$NotImplemented implements NotImplemented {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -2092,7 +2092,7 @@ class _$NotImplemented implements NotImplemented {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -2110,7 +2110,7 @@ class _$NotImplemented implements NotImplemented {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2133,7 +2133,7 @@ class _$NotImplemented implements NotImplemented {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -2200,7 +2200,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -2218,7 +2218,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2241,7 +2241,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -2270,7 +2270,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -2288,7 +2288,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2311,7 +2311,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -2378,7 +2378,7 @@ class _$NoInternetConnection implements NoInternetConnection {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -2396,7 +2396,7 @@ class _$NoInternetConnection implements NoInternetConnection {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2419,7 +2419,7 @@ class _$NoInternetConnection implements NoInternetConnection {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -2448,7 +2448,7 @@ class _$NoInternetConnection implements NoInternetConnection {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -2466,7 +2466,7 @@ class _$NoInternetConnection implements NoInternetConnection {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2489,7 +2489,7 @@ class _$NoInternetConnection implements NoInternetConnection {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -2556,7 +2556,7 @@ class _$FormatException implements FormatException {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -2574,7 +2574,7 @@ class _$FormatException implements FormatException {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2597,7 +2597,7 @@ class _$FormatException implements FormatException {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -2626,7 +2626,7 @@ class _$FormatException implements FormatException {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -2644,7 +2644,7 @@ class _$FormatException implements FormatException {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2667,7 +2667,7 @@ class _$FormatException implements FormatException {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -2734,7 +2734,7 @@ class _$UnableToProcess implements UnableToProcess {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -2752,7 +2752,7 @@ class _$UnableToProcess implements UnableToProcess {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2775,7 +2775,7 @@ class _$UnableToProcess implements UnableToProcess {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -2804,7 +2804,7 @@ class _$UnableToProcess implements UnableToProcess {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -2822,7 +2822,7 @@ class _$UnableToProcess implements UnableToProcess {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2845,7 +2845,7 @@ class _$UnableToProcess implements UnableToProcess {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -2933,7 +2933,7 @@ class _$DefaultError implements DefaultError {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -2951,7 +2951,7 @@ class _$DefaultError implements DefaultError {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -2974,7 +2974,7 @@ class _$DefaultError implements DefaultError {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -3003,7 +3003,7 @@ class _$DefaultError implements DefaultError {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -3021,7 +3021,7 @@ class _$DefaultError implements DefaultError {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -3044,7 +3044,7 @@ class _$DefaultError implements DefaultError {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
@@ -3114,7 +3114,7 @@ class _$UnexpectedError implements UnexpectedError {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result requestCancelled(),
-    @required Result unauthorisedRequest(),
+    @required Result unauthorizedRequest(),
     @required Result badRequest(),
     @required Result notFound(String reason),
     @required Result methodNotAllowed(),
@@ -3132,7 +3132,7 @@ class _$UnexpectedError implements UnexpectedError {
     @required Result unexpectedError(),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -3155,7 +3155,7 @@ class _$UnexpectedError implements UnexpectedError {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result requestCancelled(),
-    Result unauthorisedRequest(),
+    Result unauthorizedRequest(),
     Result badRequest(),
     Result notFound(String reason),
     Result methodNotAllowed(),
@@ -3184,7 +3184,7 @@ class _$UnexpectedError implements UnexpectedError {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorisedRequest(UnauthorisedRequest value),
+    @required Result unauthorizedRequest(UnauthorizedRequest value),
     @required Result badRequest(BadRequest value),
     @required Result notFound(NotFound value),
     @required Result methodNotAllowed(MethodNotAllowed value),
@@ -3202,7 +3202,7 @@ class _$UnexpectedError implements UnexpectedError {
     @required Result unexpectedError(UnexpectedError value),
   }) {
     assert(requestCancelled != null);
-    assert(unauthorisedRequest != null);
+    assert(unauthorizedRequest != null);
     assert(badRequest != null);
     assert(notFound != null);
     assert(methodNotAllowed != null);
@@ -3225,7 +3225,7 @@ class _$UnexpectedError implements UnexpectedError {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result requestCancelled(RequestCancelled value),
-    Result unauthorisedRequest(UnauthorisedRequest value),
+    Result unauthorizedRequest(UnauthorizedRequest value),
     Result badRequest(BadRequest value),
     Result notFound(NotFound value),
     Result methodNotAllowed(MethodNotAllowed value),
