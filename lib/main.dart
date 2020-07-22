@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<MovieBloc>(
+        BlocProvider<MovieCubit>(
           create: (BuildContext context) {
-            return MovieBloc(apiRepository: APIRepository());
+            return MovieCubit(apiRepository: APIRepository());
           },
           child: MyHomePage(),
         )
@@ -43,7 +43,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
-    context.bloc<MovieBloc>().add(LoadMovies());
+    context.bloc<MovieCubit>().loadMovies();
     super.initState();
   }
 
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text("Movies"),
       ),
-      body: BlocBuilder<MovieBloc, ResultState<List<Movie>>>(
+      body: BlocBuilder<MovieCubit, ResultState<List<Movie>>>(
         builder: (BuildContext context, ResultState<List<Movie>> state) {
           return state.when(
             loading: () {
