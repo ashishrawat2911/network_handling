@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'network_exceptions.dart';
 
@@ -9,6 +11,10 @@ part of 'network_exceptions.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
+/// @nodoc
 class _$NetworkExceptionsTearOff {
   const _$NetworkExceptionsTearOff();
 
@@ -16,8 +22,10 @@ class _$NetworkExceptionsTearOff {
     return const RequestCancelled();
   }
 
-  UnauthorizedRequest unauthorizedRequest() {
-    return const UnauthorizedRequest();
+  UnauthorizedRequest unauthorizedRequest(String reason) {
+    return UnauthorizedRequest(
+      reason,
+    );
   }
 
   BadRequest badRequest() {
@@ -85,100 +93,149 @@ class _$NetworkExceptionsTearOff {
   }
 }
 
-// ignore: unused_element
+/// @nodoc
 const $NetworkExceptions = _$NetworkExceptionsTearOff();
 
+/// @nodoc
 mixin _$NetworkExceptions {
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
-  });
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
+/// @nodoc
 abstract class $NetworkExceptionsCopyWith<$Res> {
   factory $NetworkExceptionsCopyWith(
           NetworkExceptions value, $Res Function(NetworkExceptions) then) =
       _$NetworkExceptionsCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NetworkExceptionsCopyWithImpl<$Res>
     implements $NetworkExceptionsCopyWith<$Res> {
   _$NetworkExceptionsCopyWithImpl(this._value, this._then);
@@ -188,12 +245,14 @@ class _$NetworkExceptionsCopyWithImpl<$Res>
   final $Res Function(NetworkExceptions) _then;
 }
 
+/// @nodoc
 abstract class $RequestCancelledCopyWith<$Res> {
   factory $RequestCancelledCopyWith(
           RequestCancelled value, $Res Function(RequestCancelled) then) =
       _$RequestCancelledCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$RequestCancelledCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $RequestCancelledCopyWith<$Res> {
@@ -205,6 +264,8 @@ class _$RequestCancelledCopyWithImpl<$Res>
   RequestCancelled get _value => super._value as RequestCancelled;
 }
 
+/// @nodoc
+
 class _$RequestCancelled implements RequestCancelled {
   const _$RequestCancelled();
 
@@ -215,7 +276,8 @@ class _$RequestCancelled implements RequestCancelled {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is RequestCancelled);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is RequestCancelled);
   }
 
   @override
@@ -223,68 +285,74 @@ class _$RequestCancelled implements RequestCancelled {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return requestCancelled();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return requestCancelled?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (requestCancelled != null) {
       return requestCancelled();
     }
@@ -293,68 +361,74 @@ class _$RequestCancelled implements RequestCancelled {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return requestCancelled(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return requestCancelled?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (requestCancelled != null) {
       return requestCancelled(this);
     }
@@ -366,12 +440,15 @@ abstract class RequestCancelled implements NetworkExceptions {
   const factory RequestCancelled() = _$RequestCancelled;
 }
 
+/// @nodoc
 abstract class $UnauthorizedRequestCopyWith<$Res> {
   factory $UnauthorizedRequestCopyWith(
           UnauthorizedRequest value, $Res Function(UnauthorizedRequest) then) =
       _$UnauthorizedRequestCopyWithImpl<$Res>;
+  $Res call({String reason});
 }
 
+/// @nodoc
 class _$UnauthorizedRequestCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $UnauthorizedRequestCopyWith<$Res> {
@@ -381,158 +458,196 @@ class _$UnauthorizedRequestCopyWithImpl<$Res>
 
   @override
   UnauthorizedRequest get _value => super._value as UnauthorizedRequest;
+
+  @override
+  $Res call({
+    Object? reason = freezed,
+  }) {
+    return _then(UnauthorizedRequest(
+      reason == freezed
+          ? _value.reason
+          : reason // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
+/// @nodoc
+
 class _$UnauthorizedRequest implements UnauthorizedRequest {
-  const _$UnauthorizedRequest();
+  const _$UnauthorizedRequest(this.reason);
+
+  @override
+  final String reason;
 
   @override
   String toString() {
-    return 'NetworkExceptions.unauthorizedRequest()';
+    return 'NetworkExceptions.unauthorizedRequest(reason: $reason)';
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is UnauthorizedRequest);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is UnauthorizedRequest &&
+            const DeepCollectionEquality().equals(other.reason, reason));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(reason));
+
+  @JsonKey(ignore: true)
+  @override
+  $UnauthorizedRequestCopyWith<UnauthorizedRequest> get copyWith =>
+      _$UnauthorizedRequestCopyWithImpl<UnauthorizedRequest>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
-    return unauthorizedRequest();
+    return unauthorizedRequest(reason);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return unauthorizedRequest?.call(reason);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (unauthorizedRequest != null) {
-      return unauthorizedRequest();
+      return unauthorizedRequest(reason);
     }
     return orElse();
   }
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return unauthorizedRequest(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return unauthorizedRequest?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (unauthorizedRequest != null) {
       return unauthorizedRequest(this);
     }
@@ -541,15 +656,22 @@ class _$UnauthorizedRequest implements UnauthorizedRequest {
 }
 
 abstract class UnauthorizedRequest implements NetworkExceptions {
-  const factory UnauthorizedRequest() = _$UnauthorizedRequest;
+  const factory UnauthorizedRequest(String reason) = _$UnauthorizedRequest;
+
+  String get reason;
+  @JsonKey(ignore: true)
+  $UnauthorizedRequestCopyWith<UnauthorizedRequest> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
+/// @nodoc
 abstract class $BadRequestCopyWith<$Res> {
   factory $BadRequestCopyWith(
           BadRequest value, $Res Function(BadRequest) then) =
       _$BadRequestCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$BadRequestCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $BadRequestCopyWith<$Res> {
@@ -559,6 +681,8 @@ class _$BadRequestCopyWithImpl<$Res>
   @override
   BadRequest get _value => super._value as BadRequest;
 }
+
+/// @nodoc
 
 class _$BadRequest implements BadRequest {
   const _$BadRequest();
@@ -570,7 +694,8 @@ class _$BadRequest implements BadRequest {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is BadRequest);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is BadRequest);
   }
 
   @override
@@ -578,68 +703,74 @@ class _$BadRequest implements BadRequest {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return badRequest();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return badRequest?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (badRequest != null) {
       return badRequest();
     }
@@ -648,68 +779,74 @@ class _$BadRequest implements BadRequest {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return badRequest(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return badRequest?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (badRequest != null) {
       return badRequest(this);
     }
@@ -721,12 +858,14 @@ abstract class BadRequest implements NetworkExceptions {
   const factory BadRequest() = _$BadRequest;
 }
 
+/// @nodoc
 abstract class $NotFoundCopyWith<$Res> {
   factory $NotFoundCopyWith(NotFound value, $Res Function(NotFound) then) =
       _$NotFoundCopyWithImpl<$Res>;
   $Res call({String reason});
 }
 
+/// @nodoc
 class _$NotFoundCopyWithImpl<$Res> extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $NotFoundCopyWith<$Res> {
   _$NotFoundCopyWithImpl(NotFound _value, $Res Function(NotFound) _then)
@@ -737,16 +876,21 @@ class _$NotFoundCopyWithImpl<$Res> extends _$NetworkExceptionsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object reason = freezed,
+    Object? reason = freezed,
   }) {
     return _then(NotFound(
-      reason == freezed ? _value.reason : reason as String,
+      reason == freezed
+          ? _value.reason
+          : reason // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
+/// @nodoc
+
 class _$NotFound implements NotFound {
-  const _$NotFound(this.reason) : assert(reason != null);
+  const _$NotFound(this.reason);
 
   @override
   final String reason;
@@ -759,83 +903,90 @@ class _$NotFound implements NotFound {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is NotFound &&
-            (identical(other.reason, reason) ||
-                const DeepCollectionEquality().equals(other.reason, reason)));
+        (other.runtimeType == runtimeType &&
+            other is NotFound &&
+            const DeepCollectionEquality().equals(other.reason, reason));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(reason);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(reason));
 
+  @JsonKey(ignore: true)
   @override
   $NotFoundCopyWith<NotFound> get copyWith =>
       _$NotFoundCopyWithImpl<NotFound>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return notFound(reason);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return notFound?.call(reason);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (notFound != null) {
       return notFound(reason);
     }
@@ -844,68 +995,74 @@ class _$NotFound implements NotFound {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return notFound(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return notFound?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (notFound != null) {
       return notFound(this);
     }
@@ -917,15 +1074,19 @@ abstract class NotFound implements NetworkExceptions {
   const factory NotFound(String reason) = _$NotFound;
 
   String get reason;
-  $NotFoundCopyWith<NotFound> get copyWith;
+  @JsonKey(ignore: true)
+  $NotFoundCopyWith<NotFound> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
+/// @nodoc
 abstract class $MethodNotAllowedCopyWith<$Res> {
   factory $MethodNotAllowedCopyWith(
           MethodNotAllowed value, $Res Function(MethodNotAllowed) then) =
       _$MethodNotAllowedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$MethodNotAllowedCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $MethodNotAllowedCopyWith<$Res> {
@@ -937,6 +1098,8 @@ class _$MethodNotAllowedCopyWithImpl<$Res>
   MethodNotAllowed get _value => super._value as MethodNotAllowed;
 }
 
+/// @nodoc
+
 class _$MethodNotAllowed implements MethodNotAllowed {
   const _$MethodNotAllowed();
 
@@ -947,7 +1110,8 @@ class _$MethodNotAllowed implements MethodNotAllowed {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is MethodNotAllowed);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is MethodNotAllowed);
   }
 
   @override
@@ -955,68 +1119,74 @@ class _$MethodNotAllowed implements MethodNotAllowed {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return methodNotAllowed();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return methodNotAllowed?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (methodNotAllowed != null) {
       return methodNotAllowed();
     }
@@ -1025,68 +1195,74 @@ class _$MethodNotAllowed implements MethodNotAllowed {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return methodNotAllowed(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return methodNotAllowed?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (methodNotAllowed != null) {
       return methodNotAllowed(this);
     }
@@ -1098,12 +1274,14 @@ abstract class MethodNotAllowed implements NetworkExceptions {
   const factory MethodNotAllowed() = _$MethodNotAllowed;
 }
 
+/// @nodoc
 abstract class $NotAcceptableCopyWith<$Res> {
   factory $NotAcceptableCopyWith(
           NotAcceptable value, $Res Function(NotAcceptable) then) =
       _$NotAcceptableCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NotAcceptableCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $NotAcceptableCopyWith<$Res> {
@@ -1115,6 +1293,8 @@ class _$NotAcceptableCopyWithImpl<$Res>
   NotAcceptable get _value => super._value as NotAcceptable;
 }
 
+/// @nodoc
+
 class _$NotAcceptable implements NotAcceptable {
   const _$NotAcceptable();
 
@@ -1125,7 +1305,8 @@ class _$NotAcceptable implements NotAcceptable {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is NotAcceptable);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is NotAcceptable);
   }
 
   @override
@@ -1133,68 +1314,74 @@ class _$NotAcceptable implements NotAcceptable {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return notAcceptable();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return notAcceptable?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (notAcceptable != null) {
       return notAcceptable();
     }
@@ -1203,68 +1390,74 @@ class _$NotAcceptable implements NotAcceptable {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return notAcceptable(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return notAcceptable?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (notAcceptable != null) {
       return notAcceptable(this);
     }
@@ -1276,12 +1469,14 @@ abstract class NotAcceptable implements NetworkExceptions {
   const factory NotAcceptable() = _$NotAcceptable;
 }
 
+/// @nodoc
 abstract class $RequestTimeoutCopyWith<$Res> {
   factory $RequestTimeoutCopyWith(
           RequestTimeout value, $Res Function(RequestTimeout) then) =
       _$RequestTimeoutCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$RequestTimeoutCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $RequestTimeoutCopyWith<$Res> {
@@ -1293,6 +1488,8 @@ class _$RequestTimeoutCopyWithImpl<$Res>
   RequestTimeout get _value => super._value as RequestTimeout;
 }
 
+/// @nodoc
+
 class _$RequestTimeout implements RequestTimeout {
   const _$RequestTimeout();
 
@@ -1303,7 +1500,8 @@ class _$RequestTimeout implements RequestTimeout {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is RequestTimeout);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is RequestTimeout);
   }
 
   @override
@@ -1311,68 +1509,74 @@ class _$RequestTimeout implements RequestTimeout {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return requestTimeout();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return requestTimeout?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (requestTimeout != null) {
       return requestTimeout();
     }
@@ -1381,68 +1585,74 @@ class _$RequestTimeout implements RequestTimeout {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return requestTimeout(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return requestTimeout?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (requestTimeout != null) {
       return requestTimeout(this);
     }
@@ -1454,12 +1664,14 @@ abstract class RequestTimeout implements NetworkExceptions {
   const factory RequestTimeout() = _$RequestTimeout;
 }
 
+/// @nodoc
 abstract class $SendTimeoutCopyWith<$Res> {
   factory $SendTimeoutCopyWith(
           SendTimeout value, $Res Function(SendTimeout) then) =
       _$SendTimeoutCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SendTimeoutCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $SendTimeoutCopyWith<$Res> {
@@ -1471,6 +1683,8 @@ class _$SendTimeoutCopyWithImpl<$Res>
   SendTimeout get _value => super._value as SendTimeout;
 }
 
+/// @nodoc
+
 class _$SendTimeout implements SendTimeout {
   const _$SendTimeout();
 
@@ -1481,7 +1695,8 @@ class _$SendTimeout implements SendTimeout {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is SendTimeout);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is SendTimeout);
   }
 
   @override
@@ -1489,68 +1704,74 @@ class _$SendTimeout implements SendTimeout {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return sendTimeout();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return sendTimeout?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (sendTimeout != null) {
       return sendTimeout();
     }
@@ -1559,68 +1780,74 @@ class _$SendTimeout implements SendTimeout {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return sendTimeout(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return sendTimeout?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (sendTimeout != null) {
       return sendTimeout(this);
     }
@@ -1632,11 +1859,13 @@ abstract class SendTimeout implements NetworkExceptions {
   const factory SendTimeout() = _$SendTimeout;
 }
 
+/// @nodoc
 abstract class $ConflictCopyWith<$Res> {
   factory $ConflictCopyWith(Conflict value, $Res Function(Conflict) then) =
       _$ConflictCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ConflictCopyWithImpl<$Res> extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $ConflictCopyWith<$Res> {
   _$ConflictCopyWithImpl(Conflict _value, $Res Function(Conflict) _then)
@@ -1645,6 +1874,8 @@ class _$ConflictCopyWithImpl<$Res> extends _$NetworkExceptionsCopyWithImpl<$Res>
   @override
   Conflict get _value => super._value as Conflict;
 }
+
+/// @nodoc
 
 class _$Conflict implements Conflict {
   const _$Conflict();
@@ -1656,7 +1887,8 @@ class _$Conflict implements Conflict {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Conflict);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is Conflict);
   }
 
   @override
@@ -1664,68 +1896,74 @@ class _$Conflict implements Conflict {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return conflict();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return conflict?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (conflict != null) {
       return conflict();
     }
@@ -1734,68 +1972,74 @@ class _$Conflict implements Conflict {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return conflict(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return conflict?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (conflict != null) {
       return conflict(this);
     }
@@ -1807,12 +2051,14 @@ abstract class Conflict implements NetworkExceptions {
   const factory Conflict() = _$Conflict;
 }
 
+/// @nodoc
 abstract class $InternalServerErrorCopyWith<$Res> {
   factory $InternalServerErrorCopyWith(
           InternalServerError value, $Res Function(InternalServerError) then) =
       _$InternalServerErrorCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InternalServerErrorCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $InternalServerErrorCopyWith<$Res> {
@@ -1824,6 +2070,8 @@ class _$InternalServerErrorCopyWithImpl<$Res>
   InternalServerError get _value => super._value as InternalServerError;
 }
 
+/// @nodoc
+
 class _$InternalServerError implements InternalServerError {
   const _$InternalServerError();
 
@@ -1834,7 +2082,8 @@ class _$InternalServerError implements InternalServerError {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is InternalServerError);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is InternalServerError);
   }
 
   @override
@@ -1842,68 +2091,74 @@ class _$InternalServerError implements InternalServerError {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return internalServerError();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return internalServerError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (internalServerError != null) {
       return internalServerError();
     }
@@ -1912,68 +2167,74 @@ class _$InternalServerError implements InternalServerError {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return internalServerError(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return internalServerError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (internalServerError != null) {
       return internalServerError(this);
     }
@@ -1985,12 +2246,14 @@ abstract class InternalServerError implements NetworkExceptions {
   const factory InternalServerError() = _$InternalServerError;
 }
 
+/// @nodoc
 abstract class $NotImplementedCopyWith<$Res> {
   factory $NotImplementedCopyWith(
           NotImplemented value, $Res Function(NotImplemented) then) =
       _$NotImplementedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NotImplementedCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $NotImplementedCopyWith<$Res> {
@@ -2002,6 +2265,8 @@ class _$NotImplementedCopyWithImpl<$Res>
   NotImplemented get _value => super._value as NotImplemented;
 }
 
+/// @nodoc
+
 class _$NotImplemented implements NotImplemented {
   const _$NotImplemented();
 
@@ -2012,7 +2277,8 @@ class _$NotImplemented implements NotImplemented {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is NotImplemented);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is NotImplemented);
   }
 
   @override
@@ -2020,68 +2286,74 @@ class _$NotImplemented implements NotImplemented {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return notImplemented();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return notImplemented?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (notImplemented != null) {
       return notImplemented();
     }
@@ -2090,68 +2362,74 @@ class _$NotImplemented implements NotImplemented {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return notImplemented(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return notImplemented?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (notImplemented != null) {
       return notImplemented(this);
     }
@@ -2163,12 +2441,14 @@ abstract class NotImplemented implements NetworkExceptions {
   const factory NotImplemented() = _$NotImplemented;
 }
 
+/// @nodoc
 abstract class $ServiceUnavailableCopyWith<$Res> {
   factory $ServiceUnavailableCopyWith(
           ServiceUnavailable value, $Res Function(ServiceUnavailable) then) =
       _$ServiceUnavailableCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ServiceUnavailableCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $ServiceUnavailableCopyWith<$Res> {
@@ -2180,6 +2460,8 @@ class _$ServiceUnavailableCopyWithImpl<$Res>
   ServiceUnavailable get _value => super._value as ServiceUnavailable;
 }
 
+/// @nodoc
+
 class _$ServiceUnavailable implements ServiceUnavailable {
   const _$ServiceUnavailable();
 
@@ -2190,7 +2472,8 @@ class _$ServiceUnavailable implements ServiceUnavailable {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is ServiceUnavailable);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is ServiceUnavailable);
   }
 
   @override
@@ -2198,68 +2481,74 @@ class _$ServiceUnavailable implements ServiceUnavailable {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return serviceUnavailable();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return serviceUnavailable?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (serviceUnavailable != null) {
       return serviceUnavailable();
     }
@@ -2268,68 +2557,74 @@ class _$ServiceUnavailable implements ServiceUnavailable {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return serviceUnavailable(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return serviceUnavailable?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (serviceUnavailable != null) {
       return serviceUnavailable(this);
     }
@@ -2341,12 +2636,14 @@ abstract class ServiceUnavailable implements NetworkExceptions {
   const factory ServiceUnavailable() = _$ServiceUnavailable;
 }
 
+/// @nodoc
 abstract class $NoInternetConnectionCopyWith<$Res> {
   factory $NoInternetConnectionCopyWith(NoInternetConnection value,
           $Res Function(NoInternetConnection) then) =
       _$NoInternetConnectionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NoInternetConnectionCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $NoInternetConnectionCopyWith<$Res> {
@@ -2358,6 +2655,8 @@ class _$NoInternetConnectionCopyWithImpl<$Res>
   NoInternetConnection get _value => super._value as NoInternetConnection;
 }
 
+/// @nodoc
+
 class _$NoInternetConnection implements NoInternetConnection {
   const _$NoInternetConnection();
 
@@ -2368,7 +2667,8 @@ class _$NoInternetConnection implements NoInternetConnection {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is NoInternetConnection);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is NoInternetConnection);
   }
 
   @override
@@ -2376,68 +2676,74 @@ class _$NoInternetConnection implements NoInternetConnection {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return noInternetConnection();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return noInternetConnection?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (noInternetConnection != null) {
       return noInternetConnection();
     }
@@ -2446,68 +2752,74 @@ class _$NoInternetConnection implements NoInternetConnection {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return noInternetConnection(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return noInternetConnection?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (noInternetConnection != null) {
       return noInternetConnection(this);
     }
@@ -2519,12 +2831,14 @@ abstract class NoInternetConnection implements NetworkExceptions {
   const factory NoInternetConnection() = _$NoInternetConnection;
 }
 
+/// @nodoc
 abstract class $FormatExceptionCopyWith<$Res> {
   factory $FormatExceptionCopyWith(
           FormatException value, $Res Function(FormatException) then) =
       _$FormatExceptionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$FormatExceptionCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $FormatExceptionCopyWith<$Res> {
@@ -2536,6 +2850,8 @@ class _$FormatExceptionCopyWithImpl<$Res>
   FormatException get _value => super._value as FormatException;
 }
 
+/// @nodoc
+
 class _$FormatException implements FormatException {
   const _$FormatException();
 
@@ -2546,7 +2862,8 @@ class _$FormatException implements FormatException {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is FormatException);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is FormatException);
   }
 
   @override
@@ -2554,68 +2871,74 @@ class _$FormatException implements FormatException {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return formatException();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return formatException?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (formatException != null) {
       return formatException();
     }
@@ -2624,68 +2947,74 @@ class _$FormatException implements FormatException {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return formatException(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return formatException?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (formatException != null) {
       return formatException(this);
     }
@@ -2697,12 +3026,14 @@ abstract class FormatException implements NetworkExceptions {
   const factory FormatException() = _$FormatException;
 }
 
+/// @nodoc
 abstract class $UnableToProcessCopyWith<$Res> {
   factory $UnableToProcessCopyWith(
           UnableToProcess value, $Res Function(UnableToProcess) then) =
       _$UnableToProcessCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnableToProcessCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $UnableToProcessCopyWith<$Res> {
@@ -2714,6 +3045,8 @@ class _$UnableToProcessCopyWithImpl<$Res>
   UnableToProcess get _value => super._value as UnableToProcess;
 }
 
+/// @nodoc
+
 class _$UnableToProcess implements UnableToProcess {
   const _$UnableToProcess();
 
@@ -2724,7 +3057,8 @@ class _$UnableToProcess implements UnableToProcess {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is UnableToProcess);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is UnableToProcess);
   }
 
   @override
@@ -2732,68 +3066,74 @@ class _$UnableToProcess implements UnableToProcess {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return unableToProcess();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return unableToProcess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (unableToProcess != null) {
       return unableToProcess();
     }
@@ -2802,68 +3142,74 @@ class _$UnableToProcess implements UnableToProcess {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return unableToProcess(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return unableToProcess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (unableToProcess != null) {
       return unableToProcess(this);
     }
@@ -2875,6 +3221,7 @@ abstract class UnableToProcess implements NetworkExceptions {
   const factory UnableToProcess() = _$UnableToProcess;
 }
 
+/// @nodoc
 abstract class $DefaultErrorCopyWith<$Res> {
   factory $DefaultErrorCopyWith(
           DefaultError value, $Res Function(DefaultError) then) =
@@ -2882,6 +3229,7 @@ abstract class $DefaultErrorCopyWith<$Res> {
   $Res call({String error});
 }
 
+/// @nodoc
 class _$DefaultErrorCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $DefaultErrorCopyWith<$Res> {
@@ -2894,16 +3242,21 @@ class _$DefaultErrorCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object error = freezed,
+    Object? error = freezed,
   }) {
     return _then(DefaultError(
-      error == freezed ? _value.error : error as String,
+      error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
+/// @nodoc
+
 class _$DefaultError implements DefaultError {
-  const _$DefaultError(this.error) : assert(error != null);
+  const _$DefaultError(this.error);
 
   @override
   final String error;
@@ -2916,83 +3269,90 @@ class _$DefaultError implements DefaultError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is DefaultError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is DefaultError &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
+  @JsonKey(ignore: true)
   @override
   $DefaultErrorCopyWith<DefaultError> get copyWith =>
       _$DefaultErrorCopyWithImpl<DefaultError>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return defaultError(error);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return defaultError?.call(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (defaultError != null) {
       return defaultError(error);
     }
@@ -3001,68 +3361,74 @@ class _$DefaultError implements DefaultError {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return defaultError(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return defaultError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (defaultError != null) {
       return defaultError(this);
     }
@@ -3074,15 +3440,19 @@ abstract class DefaultError implements NetworkExceptions {
   const factory DefaultError(String error) = _$DefaultError;
 
   String get error;
-  $DefaultErrorCopyWith<DefaultError> get copyWith;
+  @JsonKey(ignore: true)
+  $DefaultErrorCopyWith<DefaultError> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
+/// @nodoc
 abstract class $UnexpectedErrorCopyWith<$Res> {
   factory $UnexpectedErrorCopyWith(
           UnexpectedError value, $Res Function(UnexpectedError) then) =
       _$UnexpectedErrorCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnexpectedErrorCopyWithImpl<$Res>
     extends _$NetworkExceptionsCopyWithImpl<$Res>
     implements $UnexpectedErrorCopyWith<$Res> {
@@ -3094,6 +3464,8 @@ class _$UnexpectedErrorCopyWithImpl<$Res>
   UnexpectedError get _value => super._value as UnexpectedError;
 }
 
+/// @nodoc
+
 class _$UnexpectedError implements UnexpectedError {
   const _$UnexpectedError();
 
@@ -3104,7 +3476,8 @@ class _$UnexpectedError implements UnexpectedError {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is UnexpectedError);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is UnexpectedError);
   }
 
   @override
@@ -3112,68 +3485,74 @@ class _$UnexpectedError implements UnexpectedError {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result requestCancelled(),
-    @required Result unauthorizedRequest(),
-    @required Result badRequest(),
-    @required Result notFound(String reason),
-    @required Result methodNotAllowed(),
-    @required Result notAcceptable(),
-    @required Result requestTimeout(),
-    @required Result sendTimeout(),
-    @required Result conflict(),
-    @required Result internalServerError(),
-    @required Result notImplemented(),
-    @required Result serviceUnavailable(),
-    @required Result noInternetConnection(),
-    @required Result formatException(),
-    @required Result unableToProcess(),
-    @required Result defaultError(String error),
-    @required Result unexpectedError(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() requestCancelled,
+    required TResult Function(String reason) unauthorizedRequest,
+    required TResult Function() badRequest,
+    required TResult Function(String reason) notFound,
+    required TResult Function() methodNotAllowed,
+    required TResult Function() notAcceptable,
+    required TResult Function() requestTimeout,
+    required TResult Function() sendTimeout,
+    required TResult Function() conflict,
+    required TResult Function() internalServerError,
+    required TResult Function() notImplemented,
+    required TResult Function() serviceUnavailable,
+    required TResult Function() noInternetConnection,
+    required TResult Function() formatException,
+    required TResult Function() unableToProcess,
+    required TResult Function(String error) defaultError,
+    required TResult Function() unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return unexpectedError();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result requestCancelled(),
-    Result unauthorizedRequest(),
-    Result badRequest(),
-    Result notFound(String reason),
-    Result methodNotAllowed(),
-    Result notAcceptable(),
-    Result requestTimeout(),
-    Result sendTimeout(),
-    Result conflict(),
-    Result internalServerError(),
-    Result notImplemented(),
-    Result serviceUnavailable(),
-    Result noInternetConnection(),
-    Result formatException(),
-    Result unableToProcess(),
-    Result defaultError(String error),
-    Result unexpectedError(),
-    @required Result orElse(),
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
   }) {
-    assert(orElse != null);
+    return unexpectedError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? requestCancelled,
+    TResult Function(String reason)? unauthorizedRequest,
+    TResult Function()? badRequest,
+    TResult Function(String reason)? notFound,
+    TResult Function()? methodNotAllowed,
+    TResult Function()? notAcceptable,
+    TResult Function()? requestTimeout,
+    TResult Function()? sendTimeout,
+    TResult Function()? conflict,
+    TResult Function()? internalServerError,
+    TResult Function()? notImplemented,
+    TResult Function()? serviceUnavailable,
+    TResult Function()? noInternetConnection,
+    TResult Function()? formatException,
+    TResult Function()? unableToProcess,
+    TResult Function(String error)? defaultError,
+    TResult Function()? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (unexpectedError != null) {
       return unexpectedError();
     }
@@ -3182,68 +3561,74 @@ class _$UnexpectedError implements UnexpectedError {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result requestCancelled(RequestCancelled value),
-    @required Result unauthorizedRequest(UnauthorizedRequest value),
-    @required Result badRequest(BadRequest value),
-    @required Result notFound(NotFound value),
-    @required Result methodNotAllowed(MethodNotAllowed value),
-    @required Result notAcceptable(NotAcceptable value),
-    @required Result requestTimeout(RequestTimeout value),
-    @required Result sendTimeout(SendTimeout value),
-    @required Result conflict(Conflict value),
-    @required Result internalServerError(InternalServerError value),
-    @required Result notImplemented(NotImplemented value),
-    @required Result serviceUnavailable(ServiceUnavailable value),
-    @required Result noInternetConnection(NoInternetConnection value),
-    @required Result formatException(FormatException value),
-    @required Result unableToProcess(UnableToProcess value),
-    @required Result defaultError(DefaultError value),
-    @required Result unexpectedError(UnexpectedError value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(RequestCancelled value) requestCancelled,
+    required TResult Function(UnauthorizedRequest value) unauthorizedRequest,
+    required TResult Function(BadRequest value) badRequest,
+    required TResult Function(NotFound value) notFound,
+    required TResult Function(MethodNotAllowed value) methodNotAllowed,
+    required TResult Function(NotAcceptable value) notAcceptable,
+    required TResult Function(RequestTimeout value) requestTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(Conflict value) conflict,
+    required TResult Function(InternalServerError value) internalServerError,
+    required TResult Function(NotImplemented value) notImplemented,
+    required TResult Function(ServiceUnavailable value) serviceUnavailable,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(FormatException value) formatException,
+    required TResult Function(UnableToProcess value) unableToProcess,
+    required TResult Function(DefaultError value) defaultError,
+    required TResult Function(UnexpectedError value) unexpectedError,
   }) {
-    assert(requestCancelled != null);
-    assert(unauthorizedRequest != null);
-    assert(badRequest != null);
-    assert(notFound != null);
-    assert(methodNotAllowed != null);
-    assert(notAcceptable != null);
-    assert(requestTimeout != null);
-    assert(sendTimeout != null);
-    assert(conflict != null);
-    assert(internalServerError != null);
-    assert(notImplemented != null);
-    assert(serviceUnavailable != null);
-    assert(noInternetConnection != null);
-    assert(formatException != null);
-    assert(unableToProcess != null);
-    assert(defaultError != null);
-    assert(unexpectedError != null);
     return unexpectedError(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result requestCancelled(RequestCancelled value),
-    Result unauthorizedRequest(UnauthorizedRequest value),
-    Result badRequest(BadRequest value),
-    Result notFound(NotFound value),
-    Result methodNotAllowed(MethodNotAllowed value),
-    Result notAcceptable(NotAcceptable value),
-    Result requestTimeout(RequestTimeout value),
-    Result sendTimeout(SendTimeout value),
-    Result conflict(Conflict value),
-    Result internalServerError(InternalServerError value),
-    Result notImplemented(NotImplemented value),
-    Result serviceUnavailable(ServiceUnavailable value),
-    Result noInternetConnection(NoInternetConnection value),
-    Result formatException(FormatException value),
-    Result unableToProcess(UnableToProcess value),
-    Result defaultError(DefaultError value),
-    Result unexpectedError(UnexpectedError value),
-    @required Result orElse(),
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
   }) {
-    assert(orElse != null);
+    return unexpectedError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RequestCancelled value)? requestCancelled,
+    TResult Function(UnauthorizedRequest value)? unauthorizedRequest,
+    TResult Function(BadRequest value)? badRequest,
+    TResult Function(NotFound value)? notFound,
+    TResult Function(MethodNotAllowed value)? methodNotAllowed,
+    TResult Function(NotAcceptable value)? notAcceptable,
+    TResult Function(RequestTimeout value)? requestTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(Conflict value)? conflict,
+    TResult Function(InternalServerError value)? internalServerError,
+    TResult Function(NotImplemented value)? notImplemented,
+    TResult Function(ServiceUnavailable value)? serviceUnavailable,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(FormatException value)? formatException,
+    TResult Function(UnableToProcess value)? unableToProcess,
+    TResult Function(DefaultError value)? defaultError,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    required TResult orElse(),
+  }) {
     if (unexpectedError != null) {
       return unexpectedError(this);
     }

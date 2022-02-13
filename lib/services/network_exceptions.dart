@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:network_handling/model/error.dart';
 
 part 'network_exceptions.freezed.dart';
 
@@ -9,7 +10,7 @@ part 'network_exceptions.freezed.dart';
 abstract class NetworkExceptions with _$NetworkExceptions {
   const factory NetworkExceptions.requestCancelled() = RequestCancelled;
 
-  const factory NetworkExceptions.unauthorizedRequest() = UnauthorizedRequest;
+  const factory NetworkExceptions.unauthorizedRequest(String reason) = UnauthorizedRequest;
 
   const factory NetworkExceptions.badRequest() = BadRequest;
 
@@ -41,15 +42,22 @@ abstract class NetworkExceptions with _$NetworkExceptions {
 
   const factory NetworkExceptions.unexpectedError() = UnexpectedError;
 
-  static NetworkExceptions handleResponse(int statusCode) {
+  static NetworkExceptions handleResponse(Response? response) {
+    ErrorModel? errorModel;
+
+    try {
+      errorModel = ErrorModel.fromJson(response?.data);
+    } catch (e) {}
+
+    int statusCode = response?.statusCode ?? 0;
     switch (statusCode) {
       case 400:
       case 401:
       case 403:
-        return NetworkExceptions.unauthorizedRequest();
+        return NetworkExceptions.unauthorizedRequest(errorModel?.statusMessage??"Not found");
         break;
       case 404:
-        return NetworkExceptions.notFound("Not found");
+        return NetworkExceptions.notFound(errorModel?.statusMessage??"Not found");
         break;
       case 409:
         return NetworkExceptions.conflict();
@@ -77,23 +85,22 @@ abstract class NetworkExceptions with _$NetworkExceptions {
         NetworkExceptions networkExceptions;
         if (error is DioError) {
           switch (error.type) {
-            case DioErrorType.CANCEL:
+            case DioErrorType.cancel:
               networkExceptions = NetworkExceptions.requestCancelled();
               break;
-            case DioErrorType.CONNECT_TIMEOUT:
+            case DioErrorType.connectTimeout:
               networkExceptions = NetworkExceptions.requestTimeout();
               break;
-            case DioErrorType.DEFAULT:
+            case DioErrorType.other:
               networkExceptions = NetworkExceptions.noInternetConnection();
               break;
-            case DioErrorType.RECEIVE_TIMEOUT:
+            case DioErrorType.receiveTimeout:
               networkExceptions = NetworkExceptions.sendTimeout();
               break;
-            case DioErrorType.RESPONSE:
-              networkExceptions =
-                  NetworkExceptions.handleResponse(error.response.statusCode);
+            case DioErrorType.response:
+              networkExceptions = NetworkExceptions.handleResponse(error.response);
               break;
-            case DioErrorType.SEND_TIMEOUT:
+            case DioErrorType.sendTimeout:
               networkExceptions = NetworkExceptions.sendTimeout();
               break;
           }
@@ -104,7 +111,6 @@ abstract class NetworkExceptions with _$NetworkExceptions {
         }
         return networkExceptions;
       } on FormatException catch (e) {
-        // Helper.printError(e.toString());
         return NetworkExceptions.formatException();
       } catch (_) {
         return NetworkExceptions.unexpectedError();
@@ -134,8 +140,8 @@ abstract class NetworkExceptions with _$NetworkExceptions {
       errorMessage = "Method Allowed";
     }, badRequest: () {
       errorMessage = "Bad request";
-    }, unauthorizedRequest: () {
-      errorMessage = "Unauthorized request";
+    }, unauthorizedRequest: (String error) {
+      errorMessage = error;
     }, unexpectedError: () {
       errorMessage = "Unexpected error occurred";
     }, requestTimeout: () {

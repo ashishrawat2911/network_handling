@@ -9,9 +9,9 @@ const _defaultReceiveTimeout = Duration.millisecondsPerMinute;
 class DioClient {
   final String baseUrl;
 
-  Dio _dio;
+  late Dio _dio;
 
-  final List<Interceptor> interceptors;
+  final List<Interceptor>? interceptors;
 
   DioClient(
     this.baseUrl,
@@ -26,7 +26,7 @@ class DioClient {
       ..httpClientAdapter
       ..options.headers = {'Content-Type': 'application/json; charset=UTF-8'};
     if (interceptors?.isNotEmpty ?? false) {
-      _dio.interceptors.addAll(interceptors);
+      _dio.interceptors.addAll(interceptors!);
     }
     if (kDebugMode) {
       _dio.interceptors.add(LogInterceptor(
@@ -41,10 +41,10 @@ class DioClient {
 
   Future<dynamic> get(
     String uri, {
-    Map<String, dynamic> queryParameters,
-    Options options,
-    CancelToken cancelToken,
-    ProgressCallback onReceiveProgress,
+    Map<String, dynamic>? queryParameters,
+    Options? options,
+    CancelToken? cancelToken,
+    ProgressCallback? onReceiveProgress,
   }) async {
     try {
       var response = await _dio.get(
@@ -67,11 +67,11 @@ class DioClient {
   Future<dynamic> post(
     String uri, {
     data,
-    Map<String, dynamic> queryParameters,
-    Options options,
-    CancelToken cancelToken,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    Map<String, dynamic>? queryParameters,
+    Options? options,
+    CancelToken? cancelToken,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     try {
       var response = await _dio.post(
@@ -94,11 +94,11 @@ class DioClient {
   Future<dynamic> patch(
     String uri, {
     data,
-    Map<String, dynamic> queryParameters,
-    Options options,
-    CancelToken cancelToken,
-    ProgressCallback onSendProgress,
-    ProgressCallback onReceiveProgress,
+    Map<String, dynamic>? queryParameters,
+    Options? options,
+    CancelToken? cancelToken,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
   }) async {
     try {
       var response = await _dio.patch(
@@ -121,9 +121,9 @@ class DioClient {
   Future<dynamic> delete(
     String uri, {
     data,
-    Map<String, dynamic> queryParameters,
-    Options options,
-    CancelToken cancelToken,
+    Map<String, dynamic>? queryParameters,
+    Options? options,
+    CancelToken? cancelToken,
   }) async {
     try {
       var response = await _dio.delete(
